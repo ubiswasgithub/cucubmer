@@ -41,14 +41,14 @@ public class Base {
 
 	@AfterStep()
 	public void takeScreenShot(Scenario scenario) {
-//		only for the failed scenario to capture
-//	if(scenario.isFailed()) {
-//		final byte[] ss = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//		scenario.attach(ss, "image/png", "image");
-//		}
-//	caputre all steps 
+//	only for the failed scenario to capture
+		if(scenario.isFailed()) {
 		final byte[] ss = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 		scenario.attach(ss, "image/png", "image");
+		}
+//	caputre all steps 
+//		final byte[] ss = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//		scenario.attach(ss, "image/png", "image");
 	}
 
 }
