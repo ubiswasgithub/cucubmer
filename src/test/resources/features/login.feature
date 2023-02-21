@@ -8,5 +8,7 @@ Feature: Login
     Given Admin is on the login page
     When Admin enter valid "Admin" and "admin123"
     Then Home page is displayed for the admin
+    
+    
 
   

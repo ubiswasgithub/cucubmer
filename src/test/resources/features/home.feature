@@ -8,3 +8,5 @@ Feature: Logout
     Given user at the home page
     When user click on the logout option
     Then Login page is displayed
+    
+    
