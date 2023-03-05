@@ -1,4 +1,4 @@
-# cucumber
+# Cucumber
 Cucumber framework support details about the end to end testing of all the features of it.
 
 It includes:
